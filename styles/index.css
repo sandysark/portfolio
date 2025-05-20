@@ -1,5 +1,9 @@
+h1{
+    font-size: 62px;
+}
+
 nav {
-    /* background-color: #0779E4; */
+    /* background-color: #0779E4; */  
     background-color: transparent;
     display: flex;
     flex-direction: row;
@@ -17,7 +21,7 @@ nav {
     justify-content: space-between;
 }
 .hero{
-    background-image:url(../images/asset\ 0.jpeg);
+    background-image:url(../images/asset0.jpeg);
     height: 100vh;
     background-size: cover;
     display: flex;
@@ -28,7 +32,7 @@ nav {
 .hero-content{
     width:80% ;
     margin: auto;
-
+position: relative;
 }
 .bio{
     width: 60%;
@@ -41,3 +45,67 @@ nav {
 .text-bold {
     font-weight: bold;
 }
+
+.hero-info{
+    position: relative;
+    background-color: white;
+    font-weight: 800;
+    color: #0779e4;
+    white-space: nowrap;
+    font-size: 13px;
+    background: #fff;
+    border-radius: 4px;
+    padding: 4px;
+    text-align: center;
+    width: 70px;
+    z-index: 3;
+  }
+
+  .hero-info::after{
+    content: "";
+     width: 0;
+    height: 0;
+     position: absolute;
+     left: 50%;
+     top: 100%;
+     border-right: 5px solid transparent;
+     border-left: 5px solid transparent;
+     border-top: 5px solid white;
+  }
+  .info-buttons{
+    display: flex;
+    gap: 30px;
+    margin-bottom: 30px;
+  }
+  .hire-me{
+    background-color: #0779e4;
+    color: white;
+    padding: 9px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    font: size 13px; 
+    
+  }
+  .view-me{
+    background-color: white;
+    color: blue;
+    padding: 9px 12px;
+    border-radius: 4px;
+    cursor: pointer;
+    display: flex;
+    font: size 13px; 
+    
+  }
+  /* .hero-info::after{
+    content: "banku";
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position: absolute;
+    color: black;
+    bottom: -4px;
+    left: -25px;
+    transform: rotate(45deg);
+    z-index: -1;
+  } */

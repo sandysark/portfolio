@@ -7,10 +7,11 @@
     <title>Portfolio</title>
     <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
     <link rel="stylesheet" href="./styles/index.css">
+    <script src="./script/index.js" defer></script>
 </head>
 
 <body>
-    <nav>
+    <nav id="navbar">
         <div>
             <a href="#" class="text-white text-bold">
                 <h4>Sa. Sarkodie</h4>
@@ -42,21 +43,48 @@
     </nav>
     <section class="hero">
         <div class="hero-content">
-            <p>Hi There</p>
-        <h1>I am Sandra Sarkodie</h1>
-        <h1>A Web Developer</h1>
-        <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptates voluptate ipsam dignissimos expedita delectus numquam a quae cum, veritatis ea nisi deserunt? Cum est sequi doloribus quibusdam quod totam!</p>
-        <div>
-           <a href=""> <button>HIRE ME</button></a>
-            <a href=""><button>VIEW PORFOLIO</button></a>
+            <p class="hero-info">Hi There!</p>
+            <h1>I am Sandra Sarkodie</h1>
+            <h1>A Web Developer</h1>
+            <p class="bio">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusamus voluptates voluptate ipsam
+                dignissimos expedita delectus numquam a quae cum, veritatis ea nisi deserunt? Cum est sequi doloribus
+                quibusdam quod totam!</p>
+            <div class="info-buttons">
+                <a href=""> 
+                    <button class="hire-me">
+                        HIRE ME </button></a>
+                <a href=""><button class="view-me">VIEW PORFOLIO</button></a>
+            </div>
+
+            <div>
+                <a href="#"><span>+FACEBOOK</span></a>
+                <a href="#"><span>+TWITTER</span></a>
+                <a href="#"><span>+LINKDEN</span></a>
+            </div>
+        </div>
+    </section>
+    <section class="w-[80%] h-[648px] m-auto mt-[80px] flex flex-row justify-around">
+        <div class="w-[45%] bg-[url(./images/asset1.jpeg)] bg-cover bg-center">
+            <!-- <img src="./images/asset 1.jpeg" alt="About Image"> -->
+        </div>
+        <div class="w-[45%]">
+            <div>
+                <span>ABOUT ME</span>
+                <span>SKILLS</span>
+                <span>EXPERIENCE</span>
+            </div>
+            <div>
+                <h1>MY STORY</h1>
+                <P>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestias natus obcaecati quod ipsa impedit
+                    vel. Enim eius rem dicta. Quod porro consequatur iure ad voluptatum rerum labore asperiores
+                    voluptate repellat.</P>
+                <h2>I Do Web Design & Development since I was 18 Years Old</h2>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora repellendus sed laudantium modi
+                    doloribus eveniet sunt sequi minima dicta itaque vero at expedita, eaque blanditiis facere
+                    reiciendis exercitationem et assumenda.</p>
+            </div>
         </div>
 
-        <div>
-            <a href="#"><span>+FACEBOOK</span></a>
-            <a href="#"><span>+TWITTER</span></a>
-            <a href="#"><span>+LINKDEN</span></a>
-        </div>
-        </div>
     </section>
 </body>
 
